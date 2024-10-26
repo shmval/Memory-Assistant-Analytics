@@ -7,8 +7,7 @@
     "history",
     "storage",
     "sidePanel",
-    "tabs",
-    "pageCapture"
+    "tabs"
   ],
   "side_panel": {
     "default_path": "sidepanel.html"
