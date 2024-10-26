@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Memory Assistant",
+  "version": "1.0",
+  "description": "Analyze your browsing patterns with detailed statistics",
+  "permissions": [
+    "history",
+    "storage",
+    "sidePanel",
+    "tabs",
+    "pageCapture"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png"
+  }
+}

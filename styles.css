@@ -1,0 +1,272 @@
+.analytics-container {
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.select-input {
+  padding: 8px 12px;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+  background-color: white;
+  color: #2c3e50;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.select-input:hover {
+  border-color: #3498db;
+}
+
+.select-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.last-update {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.domains-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.visits-graph {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.graph-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.graph-label {
+  min-width: 150px;
+  font-size: 14px;
+  color: #2c3e50;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.graph-bar-container {
+  flex-grow: 1;
+  height: 24px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.graph-bar {
+  height: 100%;
+  background: #3498db;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  min-width: 40px;
+}
+
+.graph-value {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.domain-stat {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.domain-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.domain-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.domain-favicon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.domain-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.domain-title h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.domain-link {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.domain-link:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.domain-metrics {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.metric {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.domain-dates {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.domain-dates p {
+  margin: 4px 0;
+}
+
+.paths-details {
+  margin-top: 10px;
+}
+
+.paths-details summary {
+  color: #3498db;
+  cursor: pointer;
+  padding: 5px 0;
+  user-select: none;
+  font-size: 14px;
+}
+
+.paths-details summary:hover {
+  color: #2980b9;
+}
+
+.paths-list {
+  margin-top: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.path-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: monospace;
+  padding: 6px 10px;
+  margin: 4px 0;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.path-icon {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.path-item:hover {
+  background: #f1f3f5;
+}
+
+.no-paths {
+  color: #666;
+  font-style: italic;
+  padding: 8px;
+  text-align: center;
+}
